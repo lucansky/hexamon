@@ -1,12 +1,17 @@
 # Hexamon.io - modular wireless beehive weighting system
 Beehive monitoring platform with integrated electronics.
 
-TODO: IMG
+![measuring_set](https://github.com/lucansky/hexamon/raw/master/images/set.jpg "Whole measuring set")
+
+![measuring_set_with_panel](https://github.com/lucansky/hexamon/raw/master/images/set_with_panel.jpg "Whole measuring set with a solar panel")
+
 
 ## Architecture overview
 ### Master
 Master unit consist of a Raspberry Pi with a CAN shield with RJ11 connector.
 CAN shield is a board with SPI MCP2515 CAN controller and SN65HVD23x CAN transceiver.
+
+![can_shield](https://github.com/lucansky/hexamon/raw/master/images/shield_without_esd.jpg "CAN shield mounted on Raspberry Pi 3")
 
 ### Power management
 The system is powered through a 18V solar panel, charging 12V battery.
@@ -25,17 +30,21 @@ As an ADC with pre-amplifier was selected chip HX711 integrated on a beakout boa
 ## Hardware
 ### Platform
 What you'll need per beehive:
-4x L aluminium profile 50x50
-2x Load cell Zemic L6E or equivalent
-4x Spacer (see spacer.stl)
+* 4x L aluminium profile 50x50
+* 2x Load cell Zemic L6E or equivalent
+* 4x Spacer (see spacer.stl)
+
+![measuring_rail](https://github.com/lucansky/hexamon/raw/master/images/measuring_rail.jpg "Measuring rail")
 
 Middle bars may be optional, depending on the situation:
-2x Rectangle aluminium profile 25x15x3mm 25cm
-2x Rectangle aluminium profile 25x30x3mm 25cm
+* 2x Rectangle aluminium profile 25x15x3mm 25cm
+* 2x Rectangle aluminium profile 25x30x3mm 25cm
 These fit perfectly together. By drilling holes, pitch can be adjusted easily.
 
 ### Load cells
 Selected load cells should have capacity at least 100kg, dimensions of a load cell can be found [here](https://www.zemiceurope.com/media/Documentation/L6E_Datasheet.pdf).
+
+For testing purpose, Zemic L6E were selected.
 
 ## Modularity
 Several beehives can be chained together with a telephone cable with RJ11 jack through Bus unit under beehive, while master unit is sending captured data wirelessly to server through 3G/GSM modem.
