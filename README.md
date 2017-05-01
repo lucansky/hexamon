@@ -1,9 +1,9 @@
 # Hexamon.io - modular wireless beehive weighting system
 Beehive monitoring platform with integrated electronics.
 
-![measuring_set](https://github.com/lucansky/hexamon/raw/master/images/set.jpg "Whole measuring set")
+![measuring_set](https://github.com/lucansky/hexamon/raw/master/manuals/images/set.jpg "Whole measuring set")
 
-![measuring_set_with_panel](https://github.com/lucansky/hexamon/raw/master/images/set_with_panel.jpg "Whole measuring set with a solar panel")
+![measuring_set_with_panel](https://github.com/lucansky/hexamon/raw/master/manuals/images/set_with_panel.jpg "Whole measuring set with a solar panel")
 
 
 ## Architecture overview
@@ -11,7 +11,7 @@ Beehive monitoring platform with integrated electronics.
 Master unit consist of a Raspberry Pi with a CAN shield with RJ11 connector.
 CAN shield is a board with SPI MCP2515 CAN controller and SN65HVD23x CAN transceiver.
 
-![can_shield](https://github.com/lucansky/hexamon/raw/master/images/shield_without_esd.jpg "CAN shield mounted on Raspberry Pi 3")
+![can_shield](https://github.com/lucansky/hexamon/raw/master/manuals/images/shield_without_esd.jpg "CAN shield mounted on Raspberry Pi 3")
 
 ### Power management
 The system is powered through a 18V solar panel, charging 12V battery.
@@ -34,7 +34,7 @@ What you'll need per beehive:
 * 2x Load cell Zemic L6E or equivalent
 * 4x Spacer (see spacer.stl)
 
-![measuring_rail](https://github.com/lucansky/hexamon/raw/master/images/measuring_rail.jpg "Measuring rail")
+![measuring_rail](https://github.com/lucansky/hexamon/raw/master/manuals/images/measuring_rail.jpg "Measuring rail")
 
 Middle bars may be optional, depending on the situation:
 * 2x Rectangle aluminium profile 25x15x3mm 25cm
