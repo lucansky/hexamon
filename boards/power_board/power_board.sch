@@ -16541,8 +16541,8 @@ Source: http://www.osram.convergy.de/</description>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_02" device="5MM"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R1206" value="1M"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R1206" value="1M"/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="R1206" value="3M9"/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="R1206" value="370k"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R1206" value="3M3"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R1206" value="470k"/>
 <part name="F1" library="special" deviceset="FUSE" device="" value="3A"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -16552,8 +16552,8 @@ Source: http://www.osram.convergy.de/</description>
 <part name="J6" library="SparkFun-Connectors" deviceset="USB_A" device="_SMT_FEMALE"/>
 <part name="U3" library="custom_adluc" deviceset="MAX2812" device="MAX2812_SOIC8"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="R1206" value="100"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="R1206" value="820k"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R1206" value="0"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R1206" value="120k"/>
 <part name="R5" library="rcl" deviceset="R-TRIMM" device="64Y" value="1M"/>
 <part name="C1" library="rcl" deviceset="CPOL-EU" device="E3.5-8" value="100u"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C1206" value="100n"/>

@@ -1,19 +1,12 @@
 [Eagle]
-Version="08 00 02"
+Version="07 05 00"
 Platform="Mac OS X"
+Serial="62191E841E-LSR-WLM-1EL"
 Globals="Globals"
 Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
-UsedLibrary="/Users/adam/Documents/eagle_libraries/ST Microelctronics_By_element14_Batch_1.lbr"
-UsedLibrary="/Users/adam/Documents/eagle_libraries/Texas Instruments_By_element14_Batch_1.lbr"
-UsedLibrary="/Users/adam/Documents/eagle_libraries/e14_BeagleBoneBlack_RevB.lbr"
-UsedLibrary="/Users/adam/Documents/eagle_libraries/e14_Rpi3_RevA.lbr"
-UsedLibrary="/Users/adam/Documents/eagle_libraries/esp8266modules.lbr"
-UsedLibrary="/Users/adam/Documents/eagle_libraries/infineon.lbr"
-UsedLibrary="/Users/adam/Documents/eagle_libraries/irf.lbr"
-UsedLibrary="/Users/adam/Documents/eagle_libraries/sim900.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/19inch.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/40xx.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/41xx.lbr"
@@ -357,6 +350,14 @@ UsedLibrary="/Applications/EAGLE-7.5.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/zetex.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/zilog.lbr"
+UsedLibrary="/Users/adam/Documents/eagle_libraries/ST Microelctronics_By_element14_Batch_1.lbr"
+UsedLibrary="/Users/adam/Documents/eagle_libraries/Texas Instruments_By_element14_Batch_1.lbr"
+UsedLibrary="/Users/adam/Documents/eagle_libraries/e14_BeagleBoneBlack_RevB.lbr"
+UsedLibrary="/Users/adam/Documents/eagle_libraries/e14_Rpi3_RevA.lbr"
+UsedLibrary="/Users/adam/Documents/eagle_libraries/esp8266modules.lbr"
+UsedLibrary="/Users/adam/Documents/eagle_libraries/infineon.lbr"
+UsedLibrary="/Users/adam/Documents/eagle_libraries/irf.lbr"
+UsedLibrary="/Users/adam/Documents/eagle_libraries/sim900.lbr"
 UsedLibrary="/Users/adam/Documents/eagle_libraries/SparkFun-Eagle-Libraries-master/User-Submitted.lbr"
 UsedLibrary="/Users/adam/Documents/eagle_libraries/EagleWorks/78xx_GIO.lbr"
 UsedLibrary="/Users/adam/Documents/eagle_libraries/EagleWorks/78xx_GOI.lbr"
@@ -411,12 +412,5 @@ UsedLibrary="/Users/adam/Documents/eagle_libraries/Github-libs-connectors/con-ph
 UsedLibrary="/Users/adam/Documents/eagle_libraries/Github-libs-connectors/con-vg.lbr"
 UsedLibrary="/Users/adam/Documents/eagle_libraries/Github-libs-connectors/con-wago-500.lbr"
 
-[Win_1]
-Type="Control Panel"
-Loc="80 120 1279 719"
-State=1
-Number=0
-
 [Desktop]
 Screen="1280 800"
-Window="Win_1"

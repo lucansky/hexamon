@@ -173,7 +173,7 @@
 <hole x="4" y="46" drill="2"/>
 <hole x="70" y="46" drill="2"/>
 <hole x="4" y="4" drill="2"/>
-<text x="61.087" y="46.482" size="2.1844" layer="16" font="vector" ratio="15" rot="MR180" align="center">HEXA
+<text x="61.087" y="45.466" size="2.1844" layer="16" font="vector" ratio="15" rot="MR180" align="center">HEXA
 MON</text>
 <text x="39.243" y="38.354" size="1.9304" layer="16" font="vector" ratio="15" rot="MR180" align="center">+</text>
 <text x="38.735" y="17.018" size="1.9304" layer="16" font="vector" ratio="15" rot="MR180" align="center">+</text>
@@ -1851,8 +1851,8 @@ design rules under a new name.</description>
 </element>
 <element name="R2" library="rcl" package="R1206" value="1M" x="22.606" y="20.701" rot="MR180"/>
 <element name="R3" library="rcl" package="R1206" value="1M" x="41.656" y="27.813" rot="MR0"/>
-<element name="R4" library="rcl" package="R1206" value="3M9" x="31.115" y="38.735" rot="MR270"/>
-<element name="R6" library="rcl" package="R1206" value="370k" x="33.655" y="29.21" rot="MR180"/>
+<element name="R4" library="rcl" package="R1206" value="3M3" x="31.115" y="38.735" rot="MR270"/>
+<element name="R6" library="rcl" package="R1206" value="470k" x="33.655" y="29.21" rot="MR180"/>
 <element name="F1" library="special" package="FUSE" value="3A" x="43.18" y="46.355" rot="R180"/>
 <element name="J5" library="SparkFun-Connectors" package="USB-A-S-SILK-FEMALE" value="USB_A_SMT_FEMALE" x="47.625" y="6.985" rot="MR90">
 <attribute name="PROD_ID" value="CONN-09520" x="47.625" y="6.985" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -1863,8 +1863,8 @@ design rules under a new name.</description>
 <attribute name="SF_ID" value="PRT-09011" x="66.675" y="6.985" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="U3" library="custom_adluc" package="SOIC127P600X175-8N" value="MAX2812MAX2812_SOIC8" x="24.765" y="31.75" rot="MR0"/>
-<element name="R8" library="rcl" package="R1206" value="100" x="14.859" y="38.735" rot="MR180"/>
-<element name="R7" library="rcl" package="R1206" value="820k" x="27.94" y="38.735" rot="MR90"/>
+<element name="R8" library="rcl" package="R1206" value="0" x="14.859" y="38.735" rot="MR180"/>
+<element name="R7" library="rcl" package="R1206" value="120k" x="27.94" y="38.735" rot="MR90"/>
 <element name="R5" library="rcl" package="RTRIM64Y" value="1M" x="20.955" y="44.45" rot="R90"/>
 <element name="C1" library="rcl" package="E3,5-8" value="100u" x="38.1" y="34.925" rot="R270"/>
 <element name="C2" library="rcl" package="C1206" value="100n" x="16.51" y="31.115" rot="MR270"/>

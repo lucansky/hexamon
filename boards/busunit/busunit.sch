@@ -10636,8 +10636,8 @@ Source: www.kingbright.com</description>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="12V" device=""/>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="LC0" library="SparkFun-Connectors" deviceset="CONN_04" device=""/>
 <part name="LC1" library="SparkFun-Connectors" deviceset="CONN_04" device=""/>
+<part name="LC0" library="SparkFun-Connectors" deviceset="CONN_04" device=""/>
 <part name="SUPPLY15" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND19" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND20" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -10681,8 +10681,8 @@ Source: www.kingbright.com</description>
 <instance part="GND6" gate="1" x="63.5" y="68.58"/>
 <instance part="SUPPLY8" gate="G$1" x="149.86" y="144.78"/>
 <instance part="GND7" gate="1" x="149.86" y="116.84"/>
-<instance part="LC0" gate="G$1" x="119.38" y="30.48"/>
-<instance part="LC1" gate="G$1" x="124.46" y="-33.02"/>
+<instance part="LC1" gate="G$1" x="119.38" y="30.48"/>
+<instance part="LC0" gate="G$1" x="124.46" y="-33.02"/>
 <instance part="SUPPLY15" gate="G$1" x="134.62" y="20.32" rot="R180"/>
 <instance part="GND19" gate="1" x="134.62" y="45.72" rot="R180"/>
 <instance part="GND20" gate="1" x="137.16" y="-15.24" rot="R180"/>
@@ -10765,11 +10765,11 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="137.16" y1="-17.78" x2="137.16" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="LC1" gate="G$1" pin="4"/>
+<pinref part="LC0" gate="G$1" pin="4"/>
 <wire x1="137.16" y1="-27.94" x2="129.54" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LC0" gate="G$1" pin="4"/>
+<pinref part="LC1" gate="G$1" pin="4"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="124.46" y1="35.56" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="35.56" x2="134.62" y2="43.18" width="0.1524" layer="91"/>
@@ -10829,13 +10829,13 @@ Source: www.kingbright.com</description>
 <junction x="86.36" y="93.98"/>
 </segment>
 <segment>
-<pinref part="LC1" gate="G$1" pin="1"/>
+<pinref part="LC0" gate="G$1" pin="1"/>
 <pinref part="SUPPLY16" gate="G$1" pin="3.3V"/>
 <wire x1="129.54" y1="-35.56" x2="137.16" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="-35.56" x2="137.16" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LC0" gate="G$1" pin="1"/>
+<pinref part="LC1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY15" gate="G$1" pin="3.3V"/>
 <wire x1="124.46" y1="27.94" x2="134.62" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="27.94" x2="134.62" y2="20.32" width="0.1524" layer="91"/>
@@ -10975,12 +10975,12 @@ Source: www.kingbright.com</description>
 </net>
 <net name="LOADCELL_CLK_SHARED" class="0">
 <segment>
-<pinref part="LC0" gate="G$1" pin="2"/>
+<pinref part="LC1" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="30.48" x2="147.32" y2="30.48" width="0.1524" layer="91"/>
 <label x="147.32" y="30.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LC1" gate="G$1" pin="2"/>
+<pinref part="LC0" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="-33.02" x2="149.86" y2="-33.02" width="0.1524" layer="91"/>
 <label x="149.86" y="-33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -10995,13 +10995,15 @@ Source: www.kingbright.com</description>
 <net name="LOADCELL_DT1" class="0">
 <segment>
 <pinref part="LC1" gate="G$1" pin="3"/>
-<wire x1="129.54" y1="-30.48" x2="149.86" y2="-30.48" width="0.1524" layer="91"/>
-<label x="149.86" y="-30.48" size="1.27" layer="95" xref="yes"/>
+<wire x1="124.46" y1="33.02" x2="147.32" y2="33.02" width="0.1524" layer="91"/>
+<label x="147.32" y="33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PA5"/>
-<wire x1="264.16" y1="-5.08" x2="289.56" y2="-5.08" width="0.1524" layer="91"/>
-<label x="289.56" y="-5.08" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="PA4"/>
+<wire x1="264.16" y1="-2.54" x2="281.94" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="-2.54" x2="281.94" y2="0" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="0" x2="289.56" y2="0" width="0.1524" layer="91"/>
+<label x="289.56" y="0" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -11114,15 +11116,13 @@ Source: www.kingbright.com</description>
 <net name="LOADCELL_DT0" class="0">
 <segment>
 <pinref part="LC0" gate="G$1" pin="3"/>
-<wire x1="124.46" y1="33.02" x2="147.32" y2="33.02" width="0.1524" layer="91"/>
-<label x="147.32" y="33.02" size="1.27" layer="95" xref="yes"/>
+<wire x1="129.54" y1="-30.48" x2="149.86" y2="-30.48" width="0.1524" layer="91"/>
+<label x="149.86" y="-30.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PA4"/>
-<wire x1="264.16" y1="-2.54" x2="281.94" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="-2.54" x2="281.94" y2="0" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="0" x2="289.56" y2="0" width="0.1524" layer="91"/>
-<label x="289.56" y="0" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="PA5"/>
+<wire x1="264.16" y1="-5.08" x2="289.56" y2="-5.08" width="0.1524" layer="91"/>
+<label x="289.56" y="-5.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
