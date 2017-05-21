@@ -14,7 +14,7 @@ CAN shield is a board with SPI MCP2515 CAN controller and SN65HVD23x CAN transce
 ![can_shield](https://github.com/lucansky/hexamon/raw/master/manuals/images/shield_without_esd.jpg "CAN shield mounted on Raspberry Pi 3")
 
 ### Power management
-The system is powered through a 18V solar panel, charging 12V battery.
+The system is powered through a [18V solar panel](https://www.i4wifi.cz/Solarni-panely-1/Solarni-panely/Solarni-panel-GWL-Sunny-Poly-20-Wp-36-cells-MPPT-18V.html), charging [12V battery](https://www.gme.cz/oloveny-akumulator-shimastu-npg7-2-12-12v-7-2ah).
 Enclosure with master unit has power management board for charging circuit with under-voltage protection, as well as 5V USB ports for output.
 
 20W solar panel was selected for a prototype, due to it's ability to supply sufficient energy even during cloudy days for a Raspberry Pi.
@@ -22,7 +22,7 @@ Enclosure with master unit has power management board for charging circuit with 
 ### Bus unit
 Under each beehive, assuming that whole chain of beehives is no longer than 100m, is placed platform with load cells for measuring the weight and bus unit in an enclosure. First beehive in chain contains Master and Bus unit at once.
 
-Bus unit has STM32F042F6P6 in an TSSOP20 package with CAN transceiver and two RJ11 connectors for daisy-chaining to other bus units, as well as two holders for HX711 breakout boards. These board can be purchased through eBay or AliExpress.
+Bus unit has STM32F042F6P6 in an TSSOP20 package with CAN transceiver and two RJ11 connectors for daisy-chaining to other bus units, as well as two holders for HX711 breakout boards. [Converters boards](https://www.aliexpress.com/item/10pcs-HX711-Weighing-Sensor-Dual-Channel-24-Bit-Precision-A-D-Module-Pressure-Sensor/32656264280.html) can be purchased through eBay or AliExpress.
 
 ### Weight acquisition
 As an ADC with pre-amplifier was selected chip HX711 integrated on a beakout board with all the necessary electronics around.
@@ -51,10 +51,10 @@ Several beehives can be chained together with a telephone cable with RJ11 jack t
 
 ## Software
 ### Master unit
-Raspberry Pi 3 running Raspbian system, with an SPI overlay, provides can0 network interface which can be easily interfaced through linux socket. Main program is written in Haskell and is basically flipping frames received on CAN bus to HTTP requests to webservers where the data are further processed.
+Raspberry Pi 3 running Raspbian system, with an SPI overlay, provides can0 network interface which can be easily interfaced through linux socket. [Main program](https://github.com/lucansky/hexamond) is written in Haskell and is basically flipping frames received on CAN bus to HTTP requests to webservers where the data are further processed.
 
 ### Bus unit
-STM32F042 MCU on board has 32kB of Flash memory and 6kB SRAM. Ivory language has been selected for generation of the C code, and Ivory framework as a hardware abstraction layer, message passing and RTOS interaction. Therefore whole project is 100% Haskell except the web.
+STM32F042 MCU on board has 32kB of Flash memory and 6kB SRAM. Ivory language has been selected for generation of the C code, and Ivory framework as a hardware abstraction layer, message passing and RTOS interaction. Therefore whole project is 100% Haskell except the web. Firmware can be found [HERE](https://github.com/lucansky/hexamon-firmware).
 
 ### Web
-Web interface on a http://hexamon.io provides charts for all sensors connected to the network as well as dashboard defined by user for aggregated statistics.
+Web interface provides charts for all sensors connected to the network as well as dashboard defined by user for aggregated statistics. Each setup requires separate instance of the web with database. Source code can be found [HERE](https://github.com/lucansky/hexamon-web)
